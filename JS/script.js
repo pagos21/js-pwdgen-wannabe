@@ -1,5 +1,5 @@
 // Chiedo all'utente il nome
-var fName = prompt("Insert your name here... ");
+var fName = prompt("Inserisci il tuo Nome... ");
 
 // RegEx per controllo spazi o numeri
 
@@ -13,7 +13,7 @@ if (/\d/.test(fName)) {
 
 }
 // Chiedo il cognome
-var sName = prompt("Hi " + fName + ", insert your second name here...");
+var sName = prompt("Hi " + fName + ", Inserisci il tuo Cognome...");
 // RegEx per controllo spazi o numeri
 if (/\s/.test(sName)) {
     alert("Ci sono degli spazi nel tuo cognome")
@@ -28,7 +28,7 @@ if (/\d/.test(sName)) {
 
 // Chiedo il colore preferito
 
-var fColor = prompt("Perfect! " + fName + " " + sName + " What's your favorite color?");
+var fColor = prompt("Perfect! " + fName + " " + sName + " Colore preferito?");
 
 // Metto insieme tutto e Stampo la password
 
