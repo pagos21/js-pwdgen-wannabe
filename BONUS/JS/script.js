@@ -13,14 +13,18 @@ if (curTime < 12) {
 // Rot 13
 
 
-function rot13f() {
+function b64() {
 
 
-  alert('Caesar Cipher!!!')
+  alert('Base64 encoder!!!')
   var fName = prompt("Insert your name here... ")
 
   var sName = prompt("Hi " + fName + ", insert your second name here...")
 
   var fColor = prompt("Perfect! " + fName + " " + sName + " What's your favorite color?")
+
+  var b64e = btoa(fName + sName + fColor);
+  alert(b64e)
+  document.getElementById('b64_p').innerHTML = b64e;
 
 }
