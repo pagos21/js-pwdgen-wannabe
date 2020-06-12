@@ -26,5 +26,23 @@ function b64() {
   var b64e = btoa(fName + sName + fColor);
   alert(b64e)
   document.getElementById('b64_p').innerHTML = b64e;
+}
 
+function random_g() {
+  var n_char = prompt("Quandi caratteri?");
+  if (n_char < 8) {
+    alert("Password troppo corta!!! Min 8");
+    location.reload();
+  }
+  document.getElementById('random_p').innerHTML = random(n_char);
+}
+
+function random(length) {
+  var result           = '';
+  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!£$%&/=?^;:_-@#[]{}';
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+     result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
 }
