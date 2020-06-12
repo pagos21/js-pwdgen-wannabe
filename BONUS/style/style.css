@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.flex{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 .title{
   text-align: center;
   margin-bottom: 20px;
@@ -11,11 +18,6 @@
 
 .container{
   font-size: 1vw;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-
 }
 
 .container a{
@@ -24,10 +26,7 @@
 }
 
 .blocco0{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  margin: 0 1%;
   background-color: lightblue;
   height: 200px;
   transition: all .5s;
